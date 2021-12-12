@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/imageBtnMain2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-2dp"
+        android:backgroundTint="@color/theme_MosaicBlue"
+        app:srcCompat="@drawable/ic_backnew"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline" />
+
+    <EditText
+        android:id="@+id/inputPlanName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewAdd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter Plan Name here..."
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/inputTimePeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewAdd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginRight="40dp"
+        android:inputType="phone"
+        android:hint="Enter Time Period Here..."
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textViewProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputTimePeriod"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="0.0%"
+        android:textSize="25dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewProgress"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="40dp" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputTimePeriod"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginRight="40dp"
+        android:text="Upload" />
+
+    <TextView
+        android:id="@+id/errorViewActivity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputTimePeriod"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="67dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:textStyle="italic" />
+
+</RelativeLayout>

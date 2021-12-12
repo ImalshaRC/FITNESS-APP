@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <string name="title_activity_app_inside">appInside</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="very_severely_underweight" />
+    <string name="severely_underweight" />
+    <string name="underweight" />
+    <string name="normal" />
+    <string name="overweight" />
+    <string name="obese_class_i" />
+    <string name="obese_class_ii" />
+    <string name="obese_class_iii" />
+
+    <string name="home">Home</string>
+    <string name="workout">Workout</string>
+    <string name="food">Food</string>
+    <string name="me">Me</string>
+    <string name="username">Username</string>
+    <string name="post_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="createPost">Create New Post</string>
+    <string name="updatePost">Update Post</string>
+    <string name="createPostbtn">Create</string>
+    <string name="myPostBtnEdit">Edit</string>
+    <string name="myPostBtnDelete">Delete</string>
+    <string name="myPost_title">My Posts</string>
+    <string name="drawerHealthCalculator">Health Calculator</string>
+    <string name="hc_Diabetes">Diabetes Level</string>
+    <string name="hc_Cholesterol">Cholesterol Level</string>
+    <string name="hc_BloodPressure">Blood Pressure Level</string>
+    <string name="hc_Calculate">Calculate</string>
+    <string name="fitnessworld">FitnessWorld</string>
+    <string name="comments">Comments</string>
+</resources>

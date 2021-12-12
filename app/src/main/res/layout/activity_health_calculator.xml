@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthCalculator"
+    android:orientation="vertical"
+    android:background="@color/gainsboro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/theme_MosaicBlue"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_back"
+            android:onClick="HealthCalBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/drawerHealthCalculator"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="@string/hc_Cholesterol"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"/>
+
+        <EditText
+            android:id="@+id/txtCholesterol"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded"
+            android:paddingLeft="20dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="@string/hc_BloodPressure"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtBloodPressure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded"
+            android:paddingLeft="20dp"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="@string/hc_Diabetes"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtDiabetes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded"
+            android:paddingLeft="20dp"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+
+        <LinearLayout
+            android:id="@+id/displayHealthRec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="@string/hc_Cholesterol"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/resCholesterol"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="@string/hc_BloodPressure"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/resBloodPressure"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="@string/hc_Diabetes"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/resDiabetes"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calcHealth"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="@string/hc_Calculate"
+            android:background="@color/orange"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewActivity"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/imageBtnMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/theme_MosaicBlue"
+        app:srcCompat="@drawable/ic_backnew"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/image_single_view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/TimePeriod_single_view_Activity"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image1" />
+
+    <EditText
+        android:id="@+id/PlanName_single_view_Activity"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_search"
+        android:backgroundTint="@color/feedbackColor"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Plan Name"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/TimePeriod_single_view_Activity"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="98dp"
+        android:layout_toEndOf="@+id/PlanName_single_view_Activity"
+        android:background="@drawable/input_search"
+        android:backgroundTint="@color/feedbackColor"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Time Period"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/mealsUpdate"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="240dp"
+        android:layout_toStartOf="@+id/meals_save"
+        android:backgroundTint="@color/btns"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/meals_save"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="140dp"
+        android:backgroundTint="@color/btns"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/Breakfast"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/image_single_view_activity"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:ems="10"
+        android:hint="Add breakfast name.."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#E2C1BEBE"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/image_single_view_activity"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:gravity="center"
+        android:paddingStart="3dp"
+        android:text="Breakfast :"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:gravity="center"
+        android:paddingStart="3dp"
+        android:text="Tea            :"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:gravity="center"
+        android:text="Dinner      :"
+        android:paddingStart="3dp"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/Dinner"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tea"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:ems="10"
+        android:hint="Add Dinner name.."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#E2C1BEBE"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/Tea"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lunch"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:ems="10"
+        android:hint="Add Tea name.."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#E2C1BEBE"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/Lunch"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Breakfast"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:ems="10"
+        android:hint="Add Lunch name.."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#E2C1BEBE"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/outline3"
+        android:backgroundTint="@color/feedbackColor"
+        android:gravity="center"
+        android:paddingStart="3dp"
+        android:text="Lunch       :"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/input_search"
+        app:srcCompat="@drawable/ic_delete2"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMore"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="361dp"
+        android:layout_toEndOf="@+id/Breakfast"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_more" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMore2"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/imageButtonMore"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/Breakfast"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_more" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMore3"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/imageButtonMore2"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/Breakfast"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_more" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMore4"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/imageButtonMore3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/Breakfast"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_more" />
+
+    <TextView
+        android:id="@+id/errorMeal"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:textStyle="italic" />
+
+</RelativeLayout>

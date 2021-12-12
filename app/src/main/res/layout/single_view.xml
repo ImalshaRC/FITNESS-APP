@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/PlanName_single_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/outline2"
+        android:backgroundTint="@color/feedbackColor"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="Plan Name"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

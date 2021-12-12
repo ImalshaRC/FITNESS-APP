@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepCounter">
+
+    <include
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/imageBtnStep"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/theme_MosaicBlue"
+        app:srcCompat="@drawable/ic_backnew"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/circularProgressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="75sp"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="91dp"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/circularProgressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="166dp"
+        android:gravity="center"
+        android:text="/600"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="14dp"
+        android:indeterminateOnly="false"
+        android:max="600"
+        android:progress="20"
+        android:progressDrawable="@drawable/circle12"
+        android:rotation="-90" />
+
+    <Button
+        android:id="@+id/stepResetBtn"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circularProgressBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/blueTest"
+        android:text="reset count" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@drawable/fitness12" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="Step counter"
+        android:textSize="30sp" />
+</RelativeLayout>
